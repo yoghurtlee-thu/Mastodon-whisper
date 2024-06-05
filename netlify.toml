@@ -1,0 +1,6 @@
+[build]
+command = "npm run build"
+functions = "functions" # 指定包含函数的目录
+
+[functions]
+node_bundler = "esbuild"
