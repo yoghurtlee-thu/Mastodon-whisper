@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="css/mastodon-timeline.min.css">
+<br>
+
+<article>
+    <div id="mt-container" class="mt-container">
+        <div class="mt-body" role="feed">
+            <div class="mt-loading-spinner"></div>
+        </div>
+    </div>
+    <script src="netlify/functions/mastodon-timeline.umd.js"></script>
+    <script>
+        const myTimeline = new MastodonTimeline.Init({
+            instanceUrl: "https://mastodon.social",
+            timelineType: "profile",
+            userId: "112558718158979587",
+            profileName: "@yoghurtlee",
+            defaultTheme: "auto",
+        });
+    </script>
+</article>
